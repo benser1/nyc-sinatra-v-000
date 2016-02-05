@@ -1,12 +1,10 @@
-
- <h1>Figure</h1>
- 
- <p>Name: <%= @figure.name %></p>
-
- <% @figure.titles.each do |title| %>
-   <p>Title(s): <%= title.name %></p>
- <% end %>
- 
- <% @figure.landmarks.each do |landmark| %>
-   <p>Landmark(s): <%= landmark.name %></p>
- <% end %> 
+<h1>Figure <%= @figure.name %> </h1>
+  
+  <% @figure.landmarks.each do |landmark| %>
+    <h2><%= landmark.name %></h2>
+  <% end %>
+  
+  <% @figure.titles.each do |title| %>
+    <h2><%= title.name %></h2>
+  <% end %>  
+View
